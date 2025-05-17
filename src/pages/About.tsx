@@ -1,4 +1,3 @@
-
 import Hero from "@/components/Hero";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -33,25 +32,6 @@ const About = () => {
     }
   ];
 
-  // Team members
-  const team = [
-    {
-      name: "Financial Advisor",
-      role: "Senior Investment Specialist",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80"
-    },
-    {
-      name: "Investment Consultant",
-      role: "Equity Specialist",
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80"
-    },
-    {
-      name: "Financial Planner",
-      role: "Insurance Expert",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80"
-    }
-  ];
-
   return (
     <main>
       {/* Hero Section */}
@@ -69,9 +49,9 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&q=80" 
-                alt="Our Office" 
-                className="rounded-lg shadow-lg"
+                src="/lovable-uploads/b058fdf4-4f49-4b81-88bf-3c8288b3b227.png" 
+                alt="BSK ASPIRE Logo" 
+                className="rounded-lg shadow-lg max-w-full mx-auto"
               />
             </div>
             <div>
@@ -168,30 +148,21 @@ const About = () => {
         </div>
       </section>
 
-      {/* Our Team */}
+      {/* Our Team - Modified to remove individual images */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="heading-lg mb-4">Our Expert Team</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <p className="text-gray-600 max-w-2xl mx-auto mb-8">
               Meet the dedicated professionals who make your financial success their priority.
             </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-                <img 
-                  src={member.image} 
-                  alt={member.name} 
-                  className="w-full h-64 object-cover object-center"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
-                  <p className="text-gray-600 mb-4">{member.role}</p>
-                </div>
-              </div>
-            ))}
+            <div className="flex justify-center">
+              <img 
+                src="/lovable-uploads/b058fdf4-4f49-4b81-88bf-3c8288b3b227.png" 
+                alt="BSK ASPIRE Team" 
+                className="max-w-xs mx-auto"
+              />
+            </div>
           </div>
         </div>
       </section>
