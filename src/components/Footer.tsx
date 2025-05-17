@@ -95,7 +95,7 @@ const Footer = () => {
 
         <div className="border-t border-green-700/30 mt-8 pt-8 text-center">
           <p className="text-gray-300">
-            © {currentYear} BSK ASPIRE PVT LTD. All rights reserved.
+            Copyright © 2025. All Rights Reserved. Website Developed & Maintained by Digital Exposure Online Services.
           </p>
         </div>
       </div>
