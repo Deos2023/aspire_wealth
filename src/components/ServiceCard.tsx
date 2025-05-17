@@ -1,4 +1,3 @@
-
 import { cn } from "@/lib/utils";
 
 interface ServiceCardProps {
@@ -15,7 +14,7 @@ const ServiceCard = ({ icon, title, description, className }: ServiceCardProps) 
       className
     )}>
       <div className="flex flex-col items-center text-center">
-        <div className="mb-4 text-secondary p-3 bg-secondary/10 rounded-full">
+        <div className="mb-4 text-primary p-3 bg-accent rounded-full">
           {icon}
         </div>
         <h3 className="text-xl font-semibold mb-3">{title}</h3>
