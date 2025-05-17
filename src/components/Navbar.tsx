@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src="/lovable-uploads/b058fdf4-4f49-4b81-88bf-3c8288b3b227.png" alt="BSK WEALTH PVT. LTD." className="h-12" />
+            <img src="/lovable-uploadsb058fdf4-4f49-4b81-88bf-3c8288b3b227.png" alt="BSK WEALTH PVT. LTD." className="h-12" />
           </Link>
 
           {/* Desktop Navigation */}
