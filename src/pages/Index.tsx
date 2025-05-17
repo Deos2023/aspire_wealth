@@ -1,4 +1,3 @@
-
 import Hero from "@/components/Hero";
 import ServiceCard from "@/components/ServiceCard";
 import { Button } from "@/components/ui/button";
@@ -6,12 +5,12 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
 const Index = () => {
-  // Sample stats
+  // Updated stats
   const stats = [
     { label: "Years Experience", value: "6+" },
-    { label: "Clients Served", value: "500+" },
-    { label: "Assets Managed", value: "₹100+ Cr" },
-    { label: "Financial Products", value: "5+" }
+    { label: "Clients Served", value: "750+" },
+    { label: "Assets Managed", value: "₹250+ Cr" },
+    { label: "Financial Products", value: "15+" }
   ];
 
   // Features for why choose us section
@@ -55,7 +54,7 @@ const Index = () => {
               </p>
               <div className="grid grid-cols-2 gap-6 mb-6">
                 {stats.map((stat, index) => (
-                  <div key={index} className="text-center p-4 bg-gray-50 rounded-lg">
+                  <div key={index} className="text-center p-4 bg-accent rounded-lg">
                     <div className="text-3xl font-bold text-primary mb-1">{stat.value}</div>
                     <div className="text-sm text-gray-500">{stat.label}</div>
                   </div>
