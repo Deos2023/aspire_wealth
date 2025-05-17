@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -25,13 +24,13 @@ const Hero = ({
     <div 
       className="relative bg-cover bg-center py-24 md:py-32 lg:py-40"
       style={{ 
-        backgroundImage: `linear-gradient(to right, rgba(0, 20, 50, 0.9), rgba(0, 20, 50, 0.6)), url(${backgroundImage})` 
+        backgroundImage: `linear-gradient(to right, rgba(76, 175, 80, 0.9), rgba(200, 230, 201, 0.6)), url(${backgroundImage})` 
       }}
     >
       <div className="container-custom relative z-10">
         <div className={`max-w-3xl ${align === "center" ? "mx-auto text-center" : ""}`}>
           <h1 className="heading-xl text-white mb-6">{title}</h1>
-          <p className="text-lg md:text-xl text-gray-200 mb-8">{subtitle}</p>
+          <p className="text-lg md:text-xl text-gray-100 mb-8">{subtitle}</p>
           {showButton && (
             <Button asChild className="bg-secondary hover:bg-secondary/90 text-primary font-medium text-base">
               <Link to={buttonLink}>{buttonText}</Link>
